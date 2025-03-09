@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BelajarNotifyPropertyChange", "BelajarNotifyPropertyChange.csproj", "{D4D4086B-BFD4-4C16-AF13-4F710B8D364C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4D4086B-BFD4-4C16-AF13-4F710B8D364C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D4086B-BFD4-4C16-AF13-4F710B8D364C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D4086B-BFD4-4C16-AF13-4F710B8D364C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D4086B-BFD4-4C16-AF13-4F710B8D364C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A6983CE-2FCB-4DD6-BB0C-9A733FF8D94C}
+	EndGlobalSection
+EndGlobal
