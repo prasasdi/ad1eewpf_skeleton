@@ -6,18 +6,18 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BelajarNotifyPropertyChange
+namespace BelajarNotifyPropertyChange.Models
 {
     public class FooModel : INotifyPropertyChanged
     {
         private string name;
-        
+
         //Declare event
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        public FooModel() {}
+        public FooModel() { }
 
-        public FooModel(string name) 
+        public FooModel(string name)
         {
             this.name = name;
         }
@@ -25,10 +25,10 @@ namespace BelajarNotifyPropertyChange
         // getter setter
         public string Name
         {
-            get { return this.name; }
+            get { return name; }
             set
             {
-                this.name = value;
+                name = value;
                 OnPropertyChanged();
             }
         }

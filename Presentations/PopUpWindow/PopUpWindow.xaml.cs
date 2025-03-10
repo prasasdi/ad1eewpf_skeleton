@@ -1,4 +1,4 @@
-﻿using BelajarNotifyPropertyChange.ViewModel;
+﻿using BelajarNotifyPropertyChange.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,19 +11,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BelajarNotifyPropertyChange
+namespace BelajarNotifyPropertyChange.Presentations.PopUpWindow
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PopUpWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PopUpWindow : Window
     {
-        public MainWindow(FooViewModel vm)
+        public PopUpWindow(PopUpViewModel vm, FooModel person)
         {
+            vm.Person = person;
             this.DataContext = vm;
+            
             InitializeComponent();
         }
     }

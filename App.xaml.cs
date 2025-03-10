@@ -1,12 +1,7 @@
 ﻿using BelajarNotifyPropertyChange.DependencyInjection;
-using BelajarNotifyPropertyChange.ViewModel;
+using BelajarNotifyPropertyChange.Presentations.MainWindow;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace BelajarNotifyPropertyChange
@@ -26,7 +21,7 @@ namespace BelajarNotifyPropertyChange
 
         protected override void OnStartup(StartupEventArgs e)
         {
-            var mainWindow = new MainWindow(_serviceProvider.GetRequiredService<FooViewModel>());
+            var mainWindow = new MainWindow(_serviceProvider.GetRequiredService<MainWindowViewModel>());
             mainWindow.Show();
         }
     }

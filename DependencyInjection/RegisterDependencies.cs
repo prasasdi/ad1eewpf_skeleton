@@ -1,10 +1,6 @@
-﻿using BelajarNotifyPropertyChange.ViewModel;
+﻿using BelajarNotifyPropertyChange.Presentations.MainWindow;
+using BelajarNotifyPropertyChange.Presentations.PopUpWindow;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BelajarNotifyPropertyChange.DependencyInjection
 {
@@ -19,7 +15,8 @@ namespace BelajarNotifyPropertyChange.DependencyInjection
             //services.AddSingleton<IUserRepository, UserRepository>();
 
             // add viewmodel layer
-            services.AddTransient<FooViewModel>();
+            services.AddTransient<MainWindowViewModel>();
+            services.AddTransient<PopUpViewModel>();
 
             // add view layer, tidak dianjurkan tapi oke ga apa-apa
 

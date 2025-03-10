@@ -16,7 +16,16 @@
         <TextBox x:Name="tb_target" HorizontalAlignment="Center" Margin="0,248,0,0" TextWrapping="Wrap"
          Text="{Binding Person.Name, Mode=OneWay}" 
          VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btn_openPage" Content="Open New Page" HorizontalAlignment="Left" Margin="371,302,0,0" VerticalAlignment="Top"/>
+
+        <Button x:Name="btn_openPageWithDisabled" Content="Open New Page" HorizontalAlignment="Left" Margin="248,299,0,0" VerticalAlignment="Top"
+                Command="{Binding OpenPageCmd}"
+                AutomationProperties.Name="Buka window baru"
+                AutomationProperties.HelpText="Window baru dengan memberikan efek disable pada tombol sampai window tersebut ditutup"
+                />
+        <Button x:Name="btn_openPageNonDisabled" Content="Open B New Page" HorizontalAlignment="Left" Margin="360,299,0,0" VerticalAlignment="Top"
+                Command="{Binding OpenPageCmdNonDisable}"
+                AutomationProperties.Name="Buka window baru, dan fokuskan pada window tersebut"
+                AutomationProperties.HelpText="Tanpa efek disable, tombol tersebut dapat kembali mefokuskan window tersebut"/>
 
     </Grid>
 </Window>
