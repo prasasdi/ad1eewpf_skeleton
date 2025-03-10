@@ -6,9 +6,17 @@
         xmlns:local="clr-namespace:BelajarNotifyPropertyChange"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox HorizontalAlignment="Center" Margin="0,200,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"
-                 />
+    <Grid Margin="0,-1,0,1">
+        <Label Content="Source" HorizontalAlignment="Left" Margin="248,196,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_source" HorizontalAlignment="Center" Margin="0,200,0,0" TextWrapping="Wrap"
+         Text="{Binding Person.Name, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+         VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Target" HorizontalAlignment="Left" Margin="248,244,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_target" HorizontalAlignment="Center" Margin="0,248,0,0" TextWrapping="Wrap"
+         Text="{Binding Person.Name, Mode=OneWay}" 
+         VerticalAlignment="Top" Width="120"/>
+
 
     </Grid>
 </Window>

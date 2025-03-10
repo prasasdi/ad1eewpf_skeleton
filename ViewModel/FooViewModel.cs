@@ -12,9 +12,9 @@ namespace BelajarNotifyPropertyChange.ViewModel
         public FooViewModel(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
+            Person = new();
         }
 
-
+        public FooModel Person { get;set; }
     }
-
 }
