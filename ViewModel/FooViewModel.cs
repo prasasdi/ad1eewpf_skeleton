@@ -15,6 +15,6 @@ namespace BelajarNotifyPropertyChange.ViewModel
             Person = new();
         }
 
-        public FooModel Person { get;set; }
+        public FooModel Person { get; set; }
     }
 }

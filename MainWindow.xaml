@@ -16,7 +16,7 @@
         <TextBox x:Name="tb_target" HorizontalAlignment="Center" Margin="0,248,0,0" TextWrapping="Wrap"
          Text="{Binding Person.Name, Mode=OneWay}" 
          VerticalAlignment="Top" Width="120"/>
-
+        <Button x:Name="btn_openPage" Content="Open New Page" HorizontalAlignment="Left" Margin="371,302,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
